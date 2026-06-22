@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>老哥社区 · 日常陪伴与经验分享</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #faf7f2;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', sans-serif;
+      color: #2d2b28;
+      line-height: 1.7;
+      padding: 2rem 1.2rem;
+    }
+    .page {
+      max-width: 820px;
+      margin: 0 auto;
+      background: #fffefc;
+      border-radius: 28px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+      padding: 2.8rem 2rem 3.2rem;
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 550;
+      letter-spacing: -0.02em;
+      color: #3e3a35;
+      margin-bottom: 0.15rem;
+      border-left: 5px solid #c9b99a;
+      padding-left: 1rem;
+    }
+    .subhead {
+      font-size: 1rem;
+      color: #7a7268;
+      margin-top: -0.2rem;
+      margin-bottom: 2.5rem;
+      padding-left: 1.5rem;
+      border-left: 2px solid #e2d9cc;
+    }
+    .hero-tagline {
+      background: #f2ede5;
+      padding: 1.8rem 2rem;
+      border-radius: 24px;
+      margin-bottom: 2.8rem;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #4b453d;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    }
+    .hero-tagline em {
+      font-style: normal;
+      background: #dacfbd;
+      color: #2d2b28;
+      padding: 0.2rem 0.6rem;
+      border-radius: 8px;
+    }
+    .intro-text {
+      font-size: 1.05rem;
+      margin-bottom: 2.4rem;
+      padding: 0 0.2rem;
+    }
+    .intro-text a {
+      color: #7c6f5a;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+      font-weight: 500;
+    }
+    .intro-text a:hover {
+      color: #4a3f32;
+      background: #efe8dd;
+      text-decoration: none;
+      padding: 0 4px;
+      border-radius: 4px;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      margin: 2.2rem 0 2.8rem;
+    }
+    .card {
+      background: #f8f4ed;
+      border-radius: 20px;
+      padding: 1.6rem 1.5rem;
+      transition: all 0.15s ease;
+      border: 1px solid #ece5da;
+    }
+    .card h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: #4d463d;
+      letter-spacing: -0.01em;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #5d554b;
+      line-height: 1.6;
+    }
+    .card-people {
+      background: #f0ebe1;
+    }
+    .quote-block {
+      background: #f6f1e9;
+      border-left: 6px solid #bfad91;
+      padding: 1.4rem 1.8rem;
+      margin: 2rem 0 2.2rem;
+      border-radius: 0 16px 16px 0;
+      color: #3f3a33;
+      font-style: normal;
+    }
+    .quote-block p {
+      margin-bottom: 0.3rem;
+    }
+    .quote-block .source {
+      display: block;
+      margin-top: 0.6rem;
+      font-size: 0.9rem;
+      color: #7a7266;
+    }
+    .faq-mini {
+      background: #fcfaf6;
+      border: 1px solid #e7dfd3;
+      border-radius: 20px;
+      padding: 1.6rem 1.8rem;
+      margin: 2rem 0 1.6rem;
+    }
+    .faq-mini h4 {
+      font-weight: 500;
+      font-size: 1rem;
+      color: #5a5147;
+      margin-bottom: 0.5rem;
+    }
+    .faq-mini p {
+      color: #5d554b;
+      font-size: 0.95rem;
+    }
+    .link-sentence {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid #e7dfd3;
+      font-size: 1rem;
+      color: #4f4941;
+    }
+    .link-sentence a {
+      color: #7c6f5a;
+      font-weight: 500;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .link-sentence a:hover {
+      background: #efe8dd;
+      text-decoration: none;
+      padding: 0 4px;
+      border-radius: 4px;
+    }
+    @media (max-width: 600px) {
+      .page {
+        padding: 2rem 1.2rem;
+      }
+      h1 {
+        font-size: 1.8rem;
+        padding-left: 0.8rem;
+      }
+      .subhead {
+        font-size: 0.9rem;
+        padding-left: 1rem;
+      }
+      .hero-tagline {
+        font-size: 1rem;
+        padding: 1.4rem 1.2rem;
+      }
+      .card-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      .card {
+        padding: 1.3rem;
+      }
+      .quote-block {
+        padding: 1rem 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <h1>老哥社区</h1>
+  <div class="subhead">一个可以慢慢聊、踏实看的地方</div>
+
+  <div class="hero-tagline">
+    没有噱头，只有一群普通人聊生活、聊爱好、聊踩过的坑。<br>
+    这里的内容 <em>真实、克制、有温度</em>。
+  </div>
+
+  <div class="intro-text">
+    <p><strong>老哥社区</strong> 并不是什么大平台，它更像是一间开放的客厅——有人分享做饭翻车经历，有人讨论钓鱼和养花，也有人在深夜写下自己换工作的纠结。站点从 2020 年搭建至今，一直保持小规模运营，没有算法推荐，没有信息流轰炸。所有内容都由老用户自发产生，版主团队也大多是待了两年以上的熟面孔。</p>
+    <p>你可以在里面找到一些关于家电维修的旧帖子，或者翻到某位老哥连载的阳台种菜记录。这里没有数据焦虑，也没有「必须怎样」的生活模板。如果你厌倦了精致包装过的内容，或许可以来 <a href="https://m-lgw.com">老哥社区</a> 随便逛逛。</p>
+  </div>
+
+  <div class="card-grid">
+    <div class="card">
+      <h3>📌 用途随手记</h3>
+      <p>求助帖、经验帖、好物推荐、生活记录……分类很粗，但胜在直接。没有小编审核，发帖前写清楚标题就行。</p>
+    </div>
+    <div class="card card-people">
+      <h3>👥 适合哪类人</h3>
+      <p>喜欢慢慢交流的人，对花哨功能无感，更看重内容本身。也适合想找个安静地方写点日常、问点问题的朋友。</p>
+    </div>
+  </div>
+
+  <div class="quote-block">
+    <p>“我刚来的时候只问了一个路由器设置的问题，结果三个人回了长长的手打教程。后来我也开始回别人的帖子，一来二去成习惯了。”</p>
+    <span class="source">—— 一位注册 600 天的社区成员</span>
+  </div>
+
+  <div class="faq-mini">
+    <h4>❓ 一些你可能想知道的</h4>
+    <p><strong>注册复杂吗？</strong> 很轻量，只填用户名和邮箱就可以发言。<br>
+    <strong>有 app 吗？</strong> 没有，但移动端网页适配得还不错，平时用浏览器收藏就行。<br>
+    <strong>内容靠谱吗？</strong> 都是普通人的真实经历和看法，不权威，但胜在真诚。涉及专业问题建议多方核实。</p>
+  </div>
+
+  <div class="link-sentence">
+    💬 如果你也喜欢这种安安静静、不赶时间的社区氛围，不妨去 <a href="https://m-lgw.com">老哥社区</a> 看一眼。说不定某个帖子正好对上了你的胃口。
+  </div>
+</div>
+</body>
+</html>
